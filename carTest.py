@@ -1,8 +1,10 @@
 import cv2
 
-cap = cv2.VideoCapture(r'C:\Users\coanh\Desktop\Desktop\Work\Computer Vision\carv2.mp4')
+vidPath = r'C:\Users\coanh\Desktop\Desktop\Work\Computer Vision\carv2.mp4'
+cascadePath = r'C:\Users\coanh\Desktop\Desktop\Work\Computer Vision\cars.xml'
 
-carCascade = cv2.CascadeClassifier(r'C:\Users\coanh\Desktop\Desktop\Work\Computer Vision\cars.xml')
+cap = cv2.VideoCapture(vidPath)
+carCascade = cv2.CascadeClassifier(cascadePath)
 
 SCREEN_Y = 360
 LineY = 150
